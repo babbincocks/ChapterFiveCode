@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinTosses", "CoinTosses\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ending Balance", "Ending Balance\Ending Balance\Ending Balance.csproj", "{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ending Balance Modified", "Ending Balance Modified\Ending Balance Modified.csproj", "{2D455DDA-C9FE-4894-9235-025729043DED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,14 @@ Global
 		{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}.Release|Any CPU.ActiveCfg = Release|x86
 		{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}.Release|x86.ActiveCfg = Release|x86
 		{CE3FCE43-183A-4464-B2F1-5EBCEE4484E3}.Release|x86.Build.0 = Release|x86
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D455DDA-C9FE-4894-9235-025729043DED}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
