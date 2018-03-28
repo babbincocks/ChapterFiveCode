@@ -21,7 +21,31 @@ namespace Total_Sales
         {
             try
             {
+                //Variables.
+                decimal sales;
+                decimal total = 0m;
 
+                //Declares a StreamReader.
+                StreamReader inputFile;
+
+                //Opens the file being searched and creates a StreamReader object.
+                inputFile = File.OpenText("Sales.txt");
+
+                //Reads the file's contents.
+                while (!inputFile.EndOfStream)
+                {
+                    //Get a sales amount.
+                    sales = decimal.Parse(inputFile.ReadLine());
+
+                    //Adds the sales amount to the total variable.
+                    total += sales;
+                }
+
+                //Closes the file.
+                inputFile.Close();
+
+                //Finally, the total is displayed.
+                totalLabel.Text = total.ToString("c");
 
             }
             catch (Exception ex)

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Friend File Enhanced", "Fri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "South America", "South America\South America\South America.csproj", "{475452D1-1FCF-4CCF-8807-DB12D2DFDE90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total Sales", "Total Sales\Total Sales\Total Sales.csproj", "{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,12 @@ Global
 		{475452D1-1FCF-4CCF-8807-DB12D2DFDE90}.Release|Any CPU.ActiveCfg = Release|x86
 		{475452D1-1FCF-4CCF-8807-DB12D2DFDE90}.Release|x86.ActiveCfg = Release|x86
 		{475452D1-1FCF-4CCF-8807-DB12D2DFDE90}.Release|x86.Build.0 = Release|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Debug|x86.ActiveCfg = Debug|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Debug|x86.Build.0 = Debug|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|Any CPU.ActiveCfg = Release|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|x86.ActiveCfg = Release|x86
+		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
