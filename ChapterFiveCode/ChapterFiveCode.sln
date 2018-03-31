@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2010
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinTosses", "CoinTosses\CoinTosses.csproj", "{177A3D64-64B0-4A88-9AD2-683047495BED}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "South America", "South America\South America\South America.csproj", "{475452D1-1FCF-4CCF-8807-DB12D2DFDE90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Total Sales", "Total Sales\Total Sales\Total Sales.csproj", "{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "South America Enhanced", "South America Enhanced\South America Enhanced\South America Enhanced.csproj", "{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,12 @@ Global
 		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|Any CPU.ActiveCfg = Release|x86
 		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|x86.ActiveCfg = Release|x86
 		{C100FE3F-9F32-4F54-8AB8-E286F767B2CD}.Release|x86.Build.0 = Release|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Debug|x86.ActiveCfg = Debug|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Debug|x86.Build.0 = Debug|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Release|Any CPU.ActiveCfg = Release|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Release|x86.ActiveCfg = Release|x86
+		{B7D0ECCC-797B-456F-9A7D-4982E28EE45D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

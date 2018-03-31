@@ -19,63 +19,76 @@ namespace Ending_Balance_Modified
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
-
-            //Constant for the monthly interest rate.
-            const decimal INTEREST_RATE = 0.005m;
-
-            //Local variables.
-            decimal balance;
-            int months;
-            int count = 1;
-
-            //Get the starting balance.
-            if (decimal.TryParse(startingBalTextBox.Text, out balance))
+            try
             {
-                //Get the number of months.
-                if (int.TryParse(monthsTextBox.Text, out months))
+                //Constant for the monthly interest rate.
+                const decimal INTEREST_RATE = 0.005m;
+
+                //Local variables.
+                decimal balance;
+                int months;
+                int count = 1;
+
+                //Get the starting balance.
+                if (decimal.TryParse(startingBalTextBox.Text, out balance))
                 {
-                    //The following loop calculates the end balance.
-                    while (count <= months)
+                    //Get the number of months.
+                    if (int.TryParse(monthsTextBox.Text, out months))
                     {
-                        //This adds this month's interest to the balance.
-                        balance = balance + (INTEREST_RATE * balance);
+                        //The following loop calculates the end balance.
+                        while (count <= months)
+                        {
+                            //This adds this month's interest to the balance.
+                            balance = balance + (INTEREST_RATE * balance);
 
-                        //This displays this month's ending balance.
-                        detailListBox.Items.Add("The ending balance for month " + count + " is "
-                            + balance.ToString("c"));
+                            //This displays this month's ending balance.
+                            detailListBox.Items.Add("The ending balance for month " + count + " is "
+                                + balance.ToString("c"));
 
-                        //Increment the counter.
-                        count++;
+                            //Increment the counter.
+                            count++;
+                        }
+
+                        //Display the ending balance.
+                        endingBalanceLabel.Text = balance.ToString("c");
+
                     }
-
-                    //Display the ending balance.
-                    endingBalanceLabel.Text = balance.ToString("c");
-
+                    else
+                    {
+                        //Invalid number of months was entered.
+                        MessageBox.Show("The entered value for the number of months was invalid.");
+                    }
                 }
                 else
                 {
-                    //Invalid number of months was entered.
-                    MessageBox.Show("The entered value for the number of months was invalid.");
+                    //Invalid starting balance was entered.
+                    MessageBox.Show("The entered value for your balance was invalid.");
+
                 }
             }
-            else
+            catch (Exception ex)
             {
-                //Invalid starting balance was entered.
-                MessageBox.Show("The entered value for your balance was invalid.");
-
+                throw ex;
             }
         }
 
         private void clearButton_Click_1(object sender, EventArgs e)
         {
-            //Resets the field values.
-            startingBalTextBox.Text = "";
-            monthsTextBox.Text = "";
-            endingBalanceLabel.Text = "";
-            detailListBox.Items.Clear();
+            try
+            {
+                //Resets the field values.
+                startingBalTextBox.Text = "";
+                monthsTextBox.Text = "";
+                endingBalanceLabel.Text = "";
+                detailListBox.Items.Clear();
 
-            //Resets the focus.
-            startingBalTextBox.Focus();
+                //Resets the focus.
+                startingBalTextBox.Focus();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         private void exitButton_Click_1(object sender, EventArgs e)
